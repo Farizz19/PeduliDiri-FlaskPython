@@ -1,0 +1,41 @@
+{%extends 'layout.html'%} {%block content%}
+<div class="container">
+  <form action="/simpandata" method="POST">
+    <table class="table" border="4">
+      <tr>
+        <th>Tanggal</th>
+        <td>:</td>
+        <td>
+          <input type="date" class="from-control" name="tanggal" />
+        </td>
+      </tr>
+      <tr>
+        <th>Jam</th>
+        <td>:</td>
+        <td>
+          <input type="time" class="from-control" name="jam" />
+        </td>
+      </tr>
+      <tr>
+        <th>Lokasi Yang Dikunjungi</th>
+        <td>:</td>
+        <td>
+          <input type="text" class="from-control" name="lokasi" />
+        </td>
+      </tr>
+      <tr>
+        <th>Suhu Tubuh</th>
+        <td>:</td>
+        <td>
+          <input type="text" class="from-control" name="suhu" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="btn btn-primary" type="submit" value="Simpan Data" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+{%endblock%}

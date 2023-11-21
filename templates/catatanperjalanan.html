@@ -1,0 +1,48 @@
+{%extends 'layout.html'%} {%block content%}
+<div class="container">
+  <table class="table" border="4">
+    <tr>
+      <td>
+        <div class="">
+          <span>Urutkan Berdasarkan</span>
+        </div>
+      </td>
+      <td>
+        <select>
+          <option value="">Hari</option>
+          <option value="">Minggu</option>
+          <option value="">Bulan</option>
+        </select>
+      </td>
+      <td>
+        <a class="btn btn-danger btn-sm">Urutkan</a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Tanggal</th>
+      <th>Waktu</th>
+      <th>Lokasi</th>
+      <th>Suhu Tubuh</th>
+    </tr>
+    <tr>
+      <td>13-09-2021</td>
+      <td>08:00</td>
+      <td>Toko Buku Hangat</td>
+      <td>36.2</td>
+    </tr>
+    <tr>
+      <td>13-09-2021</td>
+      <td>10:00</td>
+      <td>Bulan Dept Store</td>
+      <td>36.2</td>
+    </tr>
+    <tr>
+      <td>16-09-2021</td>
+      <td>15:00</td>
+      <td>Pagi Jogging Area</td>
+      <td>37.0</td>
+    </tr>
+  </table>
+</div>
+{%endblock%}
